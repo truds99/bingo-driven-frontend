@@ -35,6 +35,31 @@ docker run -p 5173:5173 --env-file .env bingo-frontend
 
 ---
 
+## 🐳 Como rodar o projeto com Docker Compose
+
+1. Clone o repositório do front-end:
+
+```bash
+git clone https://github.com/seu-usuario/bingo-driven-frontend.git
+cd bingo-driven-frontend
+```
+
+2. Crie um arquivo .env na raiz com a URL do back-end:
+
+```bash
+VITE_BACKEND=http://localhost:5000
+```
+
+3. Rode o Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+A aplicação estará disponível em: http://localhost:8080
+
+---
+
 ## 📦 Rodando localmente com Vite
 
 ### ✅ Requisitos
